@@ -12,7 +12,7 @@
 
   outputs = inputs@{ nixpkgs, home-manager, lanzaboote,... }: {
     nixosConfigurations = {
-      NullByteM-PC = nixpkgs.lib.nixosSystem {
+      DitriByteX-PC = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
         modules = [
           ./system/configuration.nix
@@ -21,7 +21,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.nullbytem = import ./home-manager/home.nix;
+            home-manager.users.distribytex = import ./home-manager/home.nix;
           }
         ];
       };

@@ -5,7 +5,7 @@ stdenv.mkDerivation rec {
   version = "1.0";
 
   src = fetchFromGitHub {
-    owner = "NullByteM";
+    owner = "DistriByteX";
     repo = "simple-sddm-2";
     rev = "main";
     sha256 = "sha256-2ji8kB1s9oIIy5O2cranH6tp9gAR0GUXnKMETWcEs80=";
