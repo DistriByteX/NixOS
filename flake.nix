@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
-    hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
+    hyprland.url = "github:hyprwm/Hyprland";
     lanzaboote.url = "github:nix-community/lanzaboote/v1.0.0";
     lanzaboote.inputs.nixpkgs.follows = "nixpkgs";
     home-manager.url = "github:nix-community/home-manager/release-25.11";
@@ -12,7 +12,7 @@
 
   outputs = inputs@{ nixpkgs, home-manager, lanzaboote,... }: {
     nixosConfigurations = {
-      DitriByteX-PC = nixpkgs.lib.nixosSystem {
+      DistriByteX-PC = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
         modules = [
           ./system/configuration.nix
