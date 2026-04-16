@@ -9,7 +9,7 @@
         margin-right = 0;
         spacing = 0;
         modules-left = [ "hyprland/workspaces" "wlr/taskbar" ];
-        modules-right = [ "backlight" "battery" "pulseaudio" "hyprland/language" "clock" "tray" ];
+        modules-right = [ "memory" "cpu" "backlight" "battery" "pulseaudio" "hyprland/language" "clock" "tray" ];
         "hyprland/workspaces" = {
           on-click = "activate";
           active-only = false;
@@ -74,6 +74,14 @@
           format-en = "English (US)";
           format-ar = "Arabic (EG)";
           keyboard-name = "at-translated-set-2-keyboard";
+        };
+        "memory" = {
+          interval = 2;
+          format = " {used:0.1f}G";
+        };
+        "cpu" = {
+          interval = 10;
+          format = " {usage}%";
         };
         "tray" = {
           spacing = 3;
@@ -144,6 +152,8 @@
       #pulseaudio,
       #battery,
       #backlight,
+      #cpu,
+      #memory,
       #tray,
       #language {
         background: @backgroundlight;

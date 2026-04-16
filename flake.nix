@@ -10,7 +10,7 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, lanzaboote,... }: {
+  outputs = inputs@{ nixpkgs, home-manager, lanzaboote, ... }: {
     nixosConfigurations = {
       DistriByteX-PC = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };

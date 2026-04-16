@@ -11,6 +11,8 @@
     power-profiles-daemon.enable = true;
     blueman.enable = true;
     libinput.enable = true;
+    geoclue2.enable = true;
+    upower.enable = true;
     displayManager = {
       sddm = {
         enable = true;

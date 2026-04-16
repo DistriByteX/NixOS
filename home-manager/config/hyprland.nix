@@ -114,7 +114,6 @@
         "$mod, D, exec, rofi -show drun"
         "$mod, X, exec, wlogout"
         "$mod, P, pseudo"
-        "$mod, J, togglesplit"
         "$mod, left, movefocus, l"
         "$mod, right, movefocus, r"
         "$mod, up, movefocus, u"

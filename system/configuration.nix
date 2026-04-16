@@ -14,7 +14,6 @@
     ./modules/virtualisation.nix
     ./modules/zram.nix
     ./modules/qt.nix
-    ./modules/system.nix
   ];
 
   # Documentation

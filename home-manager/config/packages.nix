@@ -35,7 +35,6 @@
     libreoffice-fresh
     hunspell
     papers
-    foliate
     qbittorrent
     obsidian
     lutris

@@ -64,6 +64,7 @@
       allow_remote_control = "yes";
       background_opacity = 0.9;
       clear_all_shortcuts = "yes";
+      term = "xterm-256color";
     };
     keybindings = {
       "alt+c" = "copy_to_clipboard";

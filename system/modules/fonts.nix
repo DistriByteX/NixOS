@@ -9,6 +9,7 @@
       noto-fonts-cjk-serif
       nerd-fonts.fira-code
       nerd-fonts.jetbrains-mono
+      nerd-fonts.ubuntu
       fira-code
       fira-code-symbols
       fira-sans
@@ -22,6 +23,7 @@
       ibm-plex
       roboto-serif
       roboto
+      rubik
       (callPackage ./fonts-custom.nix {})
     ];
   };

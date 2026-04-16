@@ -3,8 +3,8 @@
 {
   users.users.distribytex = {
     isNormalUser = true;
-    initialPassword = "ZzcSjXf2qNbJY2U";
-    extraGroups = [ "wheel" "networkmanager" "audio" "video" "libvirtd" ];
+    initialPassword = "password";
+    extraGroups = [ "wheel" "networkmanager" "audio" "video" "libvirtd" "kvm" ];
   };
   programs.bash = {
     completion.enable = true;
